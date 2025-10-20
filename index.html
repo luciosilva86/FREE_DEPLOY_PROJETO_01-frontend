@@ -8,22 +8,7 @@
   <body>
     <noscript>Você precisa habilitar o JavaScript para rodar esta aplicação.</noscript>
     <div id="root"></div>
-    <!-- CORREÇÃO CRÍTICA: O caminho relativo "./src/main.jsx" resolve o erro do Rollup/Vite. -->
-    <script type="module" src="./src/main.jsx"></script>
+    <!-- CORREÇÃO: Mudança de "./src/main.jsx" para o caminho absoluto "/src/main.jsx" -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
-**Ponto de atenção no `index.html`:**
-
-* **`src="./src/main.jsx"`**: Este é o **caminho relativo** que você testou anteriormente, enquanto a sugestão mais recente era usar o **caminho absoluto** (`src="/src/main.jsx"`) após mover o `index.html` para a raiz.
-
-**Recomendação:**
-
-Se você moveu o `index.html` para a raiz do seu repositório (junto com `vite.config.js`), a convenção padrão para a maioria dos ambientes de *build* do Vite é usar o caminho absoluto:
-
-```html
-<script type="module" src="/src/main.jsx"></script>
-
-Se o caminho relativo (`./src/main.jsx`) ainda funcionar, ótimo! Mas para máxima compatibilidade com o Render/Vite, use o caminho absoluto (`/src/main.jsx`).
-
-O próximo passo é apenas confirmar que estas correções (configuração do Vite + estrutura de arquivos + caminho no HTML) foram aplicadas e *pushed* para o GitHub para que o Render inicie um novo *build* bem-sucedido.
