@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-widget {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
