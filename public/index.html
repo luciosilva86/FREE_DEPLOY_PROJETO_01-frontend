@@ -7,6 +7,8 @@
   </head>
   <body>
     <noscript>Você precisa habilitar o JavaScript para rodar esta aplicação.</noscript>
-    <div id="root"></div> 
+    <div id="root"></div>
+    <!-- CORREÇÃO CRÍTICA: O caminho relativo "./src/main.jsx" resolve o erro do Rollup/Vite. -->
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
