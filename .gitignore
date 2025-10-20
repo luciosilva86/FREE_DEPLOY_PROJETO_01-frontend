@@ -1,0 +1,7 @@
+# Dependências do Node
+/node_modules
+# Saída de Build
+/build
+# Arquivos temporários e logs
+npm-debug.log*
+.DS_Store
